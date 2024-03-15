@@ -53,3 +53,27 @@ public class CalculatorMain {
 싱글톤이란 정적멤버에서 만드는 단 하나의 객체이다. 하나의 객체를 공용으로 사용하기 위해 만든 것이다. 동일한 객체이므로 주소 역시 동일하다.
 싱글톤은 클래스 내부에서만 공용으로 쓰기로 한 것이기 떄문에 외부에서 new연산자로 생성자를 호출할 수 없도록 막아야한다. 
 private라는 접근제한자를 생성자 앞에 붙이면 된다. 또한 클래스 자신의 타입으로 정적필드를 선언하고 외부에서 호출할 수 있는 정적 메소드인 getInstance를 선언하면 된다.
+
+package phj.test01;
+
+public class Calculator {
+
+		static int form1To10Sum;
+		
+		static {
+				int sum= 0;
+				for( int i = 1; i <= 10; i ++) {
+					sum= sum+i;
+				}
+				form1To10Sum = sum;
+		}
+}
+package phj.test01;
+
+public class CalculatorMain {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Sum of 1 to 10: "+ Calculator.form1To10Sum);
+	}
+}

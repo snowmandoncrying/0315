@@ -44,6 +44,56 @@ public class CalculatorMain {
 	}
 }
 
+package phj.test01;
+
+public class Clean {
+	
+	int 칫솔;
+	int 치약;
+	int 샴푸;
+	int 바디워시;
+	int 린스;
+	int 비누;
+	
+	Clean(int A, int B, int C, int D, int E, int F){
+		칫솔= A;
+		치약= B;
+		샴푸= C;
+		바디워시= D;
+		린스= E;
+		비누= F;
+	}
+}
+package phj.test01;
+
+public class CleanMain {
+
+	public static void main(String[] args) {
+		Clean cn1 = new Clean(2, 3, 4, 1, 5, 3);
+
+		Clean cn2 = new Clean(3, 4, 5, 2, 2, 3);
+
+		 System.out.println("세면도구세트1:");
+	        System.out.println("칫솔: " + cn1.칫솔);
+	        System.out.println("치약: " + cn1.치약);
+	        System.out.println("샴푸: " + cn1.샴푸);
+	        System.out.println("바디워시: " + cn1.바디워시);
+	        System.out.println("린스: " + cn1.린스);
+	        System.out.println("비누: " + cn1.비누);
+
+	        System.out.println();
+
+	        System.out.println("세면도구세트2:");
+	        System.out.println("칫솔: " + cn2.칫솔);
+	        System.out.println("치약: " + cn2.치약);
+	        System.out.println("샴푸: " + cn2.샴푸);
+	        System.out.println("바디워시: " + cn2.바디워시);
+	        System.out.println("린스: " + cn2.린스);
+	        System.out.println("비누: " + cn2.비누);
+	    }
+	}
+클래스 선언과 인스턴스 선언은 다른 파일에 해야 한다.
+
 인스턴스 멤버와 정적 멤버의 차이는
 인스턴스 필드- 데이터가 객체마다 다를 때, 정적 필드- 공용으로 사용하는 데이터일 때/ 예를 들어 계산기별로 색상이 다르면 인스턴스 필드, 계산기마다 파이값은 같으니 정적 필드로.
 

@@ -92,6 +92,28 @@ public class CleanMain {
 	        System.out.println("비누: " + cn2.비누);
 	    }
 	}
+
+package phj.test01;
+
+public class Clean {		//this를 이용하여 클래스 선언
+	
+	int 칫솔;
+	int 치약;
+	int 샴푸;
+	int 바디워시;
+	int 린스;
+	int 비누;
+	
+	Clean(int 칫솔, int 치약, int 샴푸, int 바디워시, int 린스,int 비누){
+		this.칫솔= 칫솔;
+		this.치약= 치약;
+		this.샴푸= 샴푸;
+		this.바디워시= 바디워시;
+		this.린스= 린스;
+		this.비누= 비누;
+	}
+}
+
 클래스 선언과 인스턴스 선언은 다른 파일에 해야 한다.
 
 인스턴스 멤버와 정적 멤버의 차이는

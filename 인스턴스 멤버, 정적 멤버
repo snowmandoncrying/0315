@@ -179,3 +179,18 @@ public class Clean {
 		System.out.println("비누: "+ 비누);
 	}
 }
+package phj.test01;
+
+public class CleanMain {
+
+	public static void main(String[] args) {
+		Clean cn1 = new Clean(2, 3, 4, 1, 5, 3);
+		Clean cn2 = new Clean(3, 4, 5, 2, 2, 3);
+
+			System.out.println("세면도구세트 1호:");
+			cn1.cleaninput();
+	        System.out.println();
+	        System.out.println("세면도구세트 2호:");
+	        cn2.cleaninput();
+	    }
+	}
